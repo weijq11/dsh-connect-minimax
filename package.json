@@ -1,0 +1,65 @@
+{
+  "name": "dsh-connect-minimax",
+  "displayName": "DSH Connect MiniMax",
+  "description": "把本机登录的 MiniMax Code 免费额度接入 DeepSeek Harness：模型直连、积分概览与每日自动签到。",
+  "version": "1.0.0",
+  "author": "dingminhua",
+  "license": "MIT",
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "minimax",
+    "minimax-code",
+    "model-provider",
+    "credits",
+    "checkin"
+  ],
+  "type": "module",
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "main": "lib/index.js",
+  "icon": "icon.svg",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./locale/en.json": "./locale/en.json",
+    "./locale/zh.json": "./locale/zh.json",
+    "./icon": "./icon.svg",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "locale",
+    "docs",
+    "icon.svg",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-renderer",
+        "@deepseek-ai/dsh-client-ui-slots",
+        "@deepseek-ai/dsh-client-locale"
+      ],
+      "platform": "web"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": ">=4.0.4 <5.0.0",
+    "@deepseek-ai/dsh-attachment": ">=0.1.7-rc.1 <0.3.0-0",
+    "@deepseek-ai/dsh-client-locale": ">=0.1.7-rc.1 <0.3.0-0",
+    "@deepseek-ai/dsh-client-ui-renderer": ">=0.1.7-rc.1 <0.3.0-0",
+    "@deepseek-ai/dsh-client-ui-slots": ">=0.1.7-rc.1 <0.3.0-0",
+    "@deepseek-ai/dsh-home-paths": ">=0.1.7-rc.1 <0.3.0-0",
+    "@deepseek-ai/dsh-host-webserver": ">=0.1.7-rc.1 <0.3.0-0",
+    "@deepseek-ai/dsh-llm": ">=0.1.7-rc.1 <0.3.0-0",
+    "@deepseek-ai/schemastery": ">=3.18.4 <4.0.0",
+    "react": "^18.2.0"
+  }
+}

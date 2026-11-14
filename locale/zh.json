@@ -1,0 +1,17 @@
+{
+  "meta": {
+    "title": "MiniMax Code 接入",
+    "description": "把 MiniMax Code 免费额度接入 DeepSeek Harness：登录一次，在模型选择器中选用 MiniMax 模型，实时查看剩余额度，并自动完成每日签到。",
+    "detail": "docs/DETAIL.md"
+  },
+  "ui": {
+    "signIn": "登录 MiniMax Code",
+    "signOut": "退出登录",
+    "quota": "额度",
+    "checkIn": "签到",
+    "checkedIn": "已签到",
+    "checkInEnabled": "每日自动签到",
+    "notSignedIn": "未登录",
+    "signedInAs": "已登录"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "meta": {
+    "title": "MiniMax Code connect",
+    "description": "Use your MiniMax Code free quota inside DeepSeek Harness: sign in once, pick MiniMax models in the composer, watch your remaining quota, and let the plugin check in daily for you.",
+    "detail": "docs/DETAIL.md"
+  },
+  "ui": {
+    "signIn": "Sign in to MiniMax Code",
+    "signOut": "Sign out",
+    "quota": "Quota",
+    "checkIn": "Check in",
+    "checkedIn": "Checked in",
+    "checkInEnabled": "Daily check-in",
+    "notSignedIn": "Not signed in",
+    "signedInAs": "Signed in"
+  }
+}
